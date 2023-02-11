@@ -141,7 +141,9 @@ footer span {
 }
 
 .container .grid-container .card:nth-child(1){
-    background-image: url(../images/Layer\ 12.jpg);
+    color: white;
+    font-weight: 400;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Layer\ 12.jpg);
     background-position: center;
     background-size:    cover;
     background-repeat: no-repeat;
