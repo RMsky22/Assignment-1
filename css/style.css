@@ -113,6 +113,10 @@ a {
     cursor: pointer;
 }
 
+.Shop .card {
+    text-align: center;
+}
+
 footer{
     margin: auto;
     padding: 1vw 1vh;
@@ -149,8 +153,24 @@ footer span {
     background-repeat: no-repeat;
 }
 
+.Shop .grid-container .card:nth-child(1){
+    color: invert;
+    font-weight: 400;
+    background-image: url(../images/Sketch.jpg);
+    background-position: center;
+    background-size:    cover;
+    background-repeat: no-repeat;
+}
+.Shop .grid-container .card:nth-child(2     ){
+    color: invert;
+    font-weight: 400;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Sketch\ 2.jpg);
+    background-position: center;
+    background-size:    cover;
+    background-repeat: no-repeat;
+}
 .Shop .grid-container .card:nth-child(4){
-    background-image: url(../images/Hero\ Image\ .jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Hero\ Image\ .jpg);
     background-position: center;
     background-size:    cover;
     background-repeat: no-repeat;
