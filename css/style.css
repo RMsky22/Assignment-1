@@ -85,6 +85,7 @@ img {
     .--spantall {
         grid-row: span 2
     }
+<<<<<<< HEAD
 
     .--spanwide {
         grid-column: span 2;
@@ -100,3 +101,18 @@ img {
 
 
   
+=======
+    
+    .--spanwide {
+        grid-column: span 2 / auto;
+    }
+    .card {
+        max-width: 1280px;
+        max-height: auto;
+    }
+    .--spantall .--spanwide{
+        max-height: 1280px;
+        max-width: 1280px;
+    }
+}
+>>>>>>> parent of acc9245 (Update style.css)
