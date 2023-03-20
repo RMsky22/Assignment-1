@@ -77,39 +77,3 @@ nav a:hover {
     color: black;
 }
 
-@media (max-width: 768px) {
-    .hamburger-menu {
-        width: 45px;
-        height: auto;
-
-    }
-
-    .hamburger-menu .mobilenav nav {
-        background-color: aliceblue;
-        display: none;
-
-    }
-
-    .hamburger-menu .mobilenav {
-
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        display: flex;
-        width: 40vw;
-        right: 150px;
-        flex-direction: column;
-        height: 10em;
-
-
-
-    }
-
-    .hamburger-menu .mobilenav nav a {}
-
-    header .desktopnav nav {
-        display: none;
-    }
-
-
-}
