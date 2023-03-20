@@ -7,7 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple CSS website</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/footerstyle.css">
+    <link rel="stylesheet" href="./css/headerstyle.css">
+    <link rel="stylesheet" href="./css/gridstyle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".header-right > a").click(function () {
+                $(".hamburger-menu").addClass("active");
+            });
+            $(".close").click(function () {
+                $(".hamburger-menu").removeClass("active");
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -18,25 +32,30 @@
         <div class="logo">
             <img src="./images/Logo.svg" alt="North Studio Logo">
         </div>
-        <nav>
-            <ul>
-                <li> <a href="#">Example</a></li>
-                <li> <a href="#">Example</a></li>
-                <li> <a href="#">Example</a></li>
-                <li> <a href="#">Example</a></li>
-                <li> <a href="#">Example</a></li>
-                <li> <a href="#">Example</a></li>
+        <div class="desktopnav">
+            <nav>
+                <ul>
+                    <li> <a href="#footer">Contact</a></li>
+                    <li> <a href="#gallery">Gallery</a></li>
+                    <li> <a href="#">Featured</a></li>
 
-            </ul>
-
-
-        </nav>
-        <div>
-            <button>Example</button>
-            <button>Example</button>
+                    <button>Cart</button>
+                </ul>
+            </nav>
         </div>
 
-        <i class="gg-shopping-bag"></i>
+        <div class="hamburger-menu">
+            <img src="./images/Hamburger_icon.png" alt="" srcset="">
+            <div class="mobilenav">
+             <nav>
+             <ul>
+                 <li> <a href="#footer">Contact</a></li>
+                 <li> <a href="#gallery">Gallery</a></li>
+                 <li> <a href="#">Featured</a></li>
+             </ul>
+         </nav>
+         </div>
+
 
     </header>
     <div class="hero">
@@ -49,8 +68,11 @@
     <article class="container">
 
         <h2>
-            Collection
+            My Store
         </h2>
+        <h3>
+            Featured
+        </h3>
         <div class="grid-container">
             <div class="card">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -85,23 +107,39 @@
         </div>
     </article>
 
-    <article class="Shop">
+    <article class="Shop" id="gallery">
         <div class="shoptext">
-            <h2>My Art</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officia iure ratione nesciunt voluptas
-                consequatur, delectus explicabo mollitia corporis rem earum sunt, aliquam aut illo corrupti inventore
-                nisi
-                libero?</p>
+            <h1>My <Article></Article>
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo officia iure ratione nesciunt
+                    voluptas
+                    consequatur, delectus explicabo mollitia corporis rem earum sunt, aliquam aut illo corrupti
+                    inventore
+                    nisi
+                    libero?</p>
         </div>
         <div class="grid-container">
-            <div class="card --spantall">Item</div>
-            <div class="card">Item</div>
-            <div class="card">Item</div>
-            <div class="card --spanwide">Item</div>
+            <div class="card --spanbig"><img src="./images/image3.png" alt=""></div>
+            <div class="card"><img src="./images/image 2.jpg" alt=""></div>
+            <div class="card --spanbig"><img src="./images/image 3.jpg" alt=""></div>
+            <div class="card --spanbig"><img src="./images/image 4.jpg" alt=""></div>
+            <div class="card "><img src="./images/image 1.jpg" alt=""></div>
+            <div class="card --spantall"><img src="./images/Screen Shot 2023-03-19 at 8.18.10 PM.png" alt=""></div>
+            <div class="card --spantall"><img src="./images/Screen Shot 2023-03-17 at 10.29.25 PM.png" alt=""></div>
         </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque natus nulla suscipit autem error, blanditiis
+            vero officiis commodi soluta dolor quaerat corporis in illum at cupiditate dignissimos nihil minima
+            sapiente.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo nulla quibusdam nisi quia qui hic
+            placeat eius maxime, vitae error modi in omnis vel laudantium laborum iure nemo quidem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae distinctio in quisquam a minus
+            omnis at odit voluptatum sunt exercitationem ex, corrupti impedit itaque temporibus dolore accusantium sint
+            quos.
+        </p>
     </article>
 
-    <footer>
+    <footer id="footerx`">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, distinctio labore, obcaecati, atque
             asperiores repellat aliquam adipisci mollitia ut eveniet accusamus? Provident sunt consequatur totam dolores
             nisi eos ducimus vero?</p>
